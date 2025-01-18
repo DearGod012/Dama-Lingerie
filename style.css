@@ -1,0 +1,127 @@
+/* Resetando estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo e fonte */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #d4af37, #000000);
+    color: #fff;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #fff;
+}
+
+header .logo h1 {
+    font-size: 2em;
+    color: #fff;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Seções de categorias */
+.category {
+    margin-top: 50px;
+}
+
+.category h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Estilo para os produtos */
+.product {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 20px;
+}
+
+.product img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product .info {
+    max-width: 400px;
+    padding-left: 20px;
+}
+
+.product h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.product .price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #d4af37;
+    margin-bottom: 10px;
+}
+
+.product .description {
+    font-size: 1.1em;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    background: #000;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .product .info {
+        padding-left: 0;
+        text-align: center;
+    }
+}
